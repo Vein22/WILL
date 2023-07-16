@@ -13,6 +13,23 @@ function numeroSimetrico(num) {
   // numeroSimetrico(11711) devuelve true
 
   // Tu código:
+  var numToString = String(num);
+  var numAlReves = '';
+  for (let i = numToString.length - 1; i >= 0; i--) {
+  numAlReves += numToString[i];
+  }
+  if (numAlReves === numToString) {
+  return true;
+  } else {
+  return false;
+  }
+
+  // function numeroSimetrico(num) {
+  //   if (num % 2 === 0) {
+  //     return true;
+  //   }                                  Esto no funciona con numero palindromos que sean de longitud impar.
+  //   return false;
+  // }
 
 }
 
